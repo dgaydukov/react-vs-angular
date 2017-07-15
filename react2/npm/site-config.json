@@ -1,0 +1,6 @@
+{
+    "platformId": "A167FFC2-38E0-4036-9560-D0F3E22A8F08",
+    "baseURL": "https://payqr.ru/websdk/api/",
+    "cookieAuthTokenName": "accessToken",
+    "cookieUserIdName": "userId"
+}

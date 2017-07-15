@@ -1,0 +1,11 @@
+{
+  "name": "react.lifehacker",
+  "script": "app/server.js",
+  "autorestart": true,
+  "watch": [ "app" ],
+  "ignore_watch": [ "src", "build" ],
+  "env": {
+    "env": "dev",
+    "port": 3103
+  }
+}
