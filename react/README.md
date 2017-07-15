@@ -1,4 +1,4 @@
-# BANKI.RU
+# React Admin Panel
 
 ##This is react cms system for creating spa websites
 

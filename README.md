@@ -1,40 +1,25 @@
 # React vs Angular
 
-One Paragraph of project description goes here
+This project is one more attempt to find out how react and angular works, how they solve a problem, and what technology best suits for you.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+In order to start, you should clone this repo. After cloning you will get one project (adminPanel), implemented in react and angular.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+As I'm a linux user, this project is best works with linux, but it can work in windows evniroment too.
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+* Clone repository ```git clone https://github.com/dgaydukov/react-vs-angular.git```
+* Go to react ```cd react```, and run reactAdminPanel ```npm start```
+* Go to angular ```cd angular```, and run angularAdminPanel ```npm start```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+...
 
 ### Break down into end to end tests
 
@@ -58,9 +43,8 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Angular 4.0](https://angular.io) - The web framework
+* [React 15.0](https://facebook.github.io/react/blog/2016/04/07/react-v15.html) - The web framework
 
 
 ## Authors

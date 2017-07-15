@@ -11,24 +11,31 @@ To demonstrate pros and cons of both technology i will make one project in both,
 
 ## App Structure
 
-An an example i decided to write simple e-shop. Why e-shop and not ad admin panel, will you ask. Well, because it has all steps and intricate logic to show.
+An an example i decided to write simple adminPanel.
 
-A shop will consist of the following components:
+adminPanel will consist of the following components:
 ```
 -auth
---register
+--mulit-step-register
 --login
 -mainpage
--catalog
---shop
---cart
+-user-roles crud
+-catalog crud
+-transactions list
 ```
-To demonstrate all power, we need a backedn server, that will be located in /backend/db, and be a simple json file. For this, we will use [json_server](https://www.npmjs.com/package/json-server)
+To demonstrate all power, we need a backend server, that will be located in /backend/db, and be a simple json file. For this, we will use [json_server](https://www.npmjs.com/package/json-server)
 ```
 API (json_server, db.json/restore.json)
 POST: /register
+POST: /register/confirm
 POST: /login
-GET/PUT: /profile
-POST: /order
-GET: /catalog, /catalog/:id
+
+GET: /catalog
+GET: /catalog/:id
+POST: /catalog/
+PUT: /catalog/:id
+DELETE: /catalog/:id
+
+GET: /transactions
+GET: /transactions/:id
 ```

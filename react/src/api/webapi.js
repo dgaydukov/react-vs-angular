@@ -25,7 +25,7 @@ export function loginUser(cb) {
     helpers.populateAxios(axios);
     var userId = helpers.getQueryVariable("userId");
     if(userId){
-        axios.post("users/login/external", {
+        axios.post("1", {
             userId: userId,
         }).then(response=>{
             console.log(response);
@@ -59,7 +59,7 @@ export function logoutUser() {
 
 
 export function getProfile() {
-    return axios.get('users/profile')
+    return axios.get('2')
         .then(response => {
             console.log(response.data)
             store.dispatch(creators.getProfileSuccess(response.data));
@@ -71,7 +71,7 @@ export function getProfile() {
 }
 
 export function getCatalog() {
-    var url = `partners/mapdata?token=${cookies.get(config.cookieAuthTokenName)}&userId=${cookies.get(config.cookieUserIdName)}&platformId=${config.platformId}&timestamp=${+new Date()}`;
+    var url = `3?token=${cookies.get(config.cookieAuthTokenName)}&userId=${cookies.get(config.cookieUserIdName)}&platformId=${config.platformId}&timestamp=${+new Date()}`;
 
     //todo find why in firefox axios not working
     var xhr = new XMLHttpRequest();

@@ -3,17 +3,12 @@ import React from 'react';
 import { Switch, Route, Link, Redirect, withRouter } from 'react-router-dom';
 
 
-import RightBlock from "./rightblock/module";
 
 import MainPage from "../mainpage/module"
 import Catalog from "../catalog/module"
 import Profile from "../profile/module"
-import CashbackRule from "../cashbakc-rule/module";
-import NotFount from "../notfound/module";
-import Dimer from "./dimer/module";
 import Header from "../header/module";
 
-import ReactCustomGA from '../react-custom-ga/module';
 
 
 
@@ -47,8 +42,6 @@ const Content = props => {
                         <h2>no access</h2>
                 )
             }}/>
-            <Route path='/rules' component={CashbackRule}/>
-            <Route path='*' component={NotFount}/>
         </Switch>
     )
 }
@@ -61,7 +54,6 @@ class Layout extends React.Component{
     componentWillMount() {
         this.unlisten = this.props.history.listen(location => {
             //console.log(location.pathname);
-            ReactCustomGA.Change(location.pathname)
         });
     }
 
@@ -73,11 +65,8 @@ class Layout extends React.Component{
         const state = this.props.state;
         return (
             <div className="wrapper">
-                <Dimer state={state}/>
                 <div className="container">
-                    <Header state={state}/>
                     <main className="main clearfix">
-                        <RightBlock state={state}/>
                         <div className="main-with-bar clearfix">
                             <h1 className="page-title">Бонусный клуб</h1>
                             <div className="blc__desc">Сравнить условия получения и подобрать потребительский кредит, лучшие ставки по кредитам в банках. Выберите параметры поиска онлайн</div>

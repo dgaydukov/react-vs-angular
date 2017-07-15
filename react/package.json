@@ -4,7 +4,7 @@
   "description": "cms for websdk mobile and desktop projects",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=3103 node app/webpack.node.server.js",
+    "start": "PORT=3302 node app/webpack.node.server.js",
     "mkmod": "sh npm/mkmod.sh",
     "gitpush": "sh npm/gitpush.sh"
   },
