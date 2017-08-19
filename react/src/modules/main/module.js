@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-class MainPage extends React.Component{
+export default class Main extends React.Component{
     constructor(props){
         super(props);
     }
@@ -13,11 +13,9 @@ class MainPage extends React.Component{
 
     render(){
         return(
-            <div className="mainpage">
+            <div className="main">
                 <h1>MainPage</h1>
             </div>
         )
     }
 }
-
-export default MainPage;

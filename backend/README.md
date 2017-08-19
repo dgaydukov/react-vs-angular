@@ -22,11 +22,11 @@ POST: /register
 POST: /register/confirm
 POST: /login
 
-GET: /catalog
-GET: /catalog/:id
-POST: /catalog
-PUT: /catalog/:id
-DELETE: /catalog/:id
+GET: /products
+GET: /products/:id
+POST: /products
+PUT: /products/:id
+DELETE: /products/:id
 
 GET: /faq
 GET: /faq/:id

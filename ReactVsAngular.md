@@ -36,7 +36,7 @@ An an example i decided to write simple adminPanel of site FAQ adn catalog manag
 -mainpage
 -feedback
 -profile
--catalog crud
+-products crud
 -faq crud
 -user-roles crud
 ```

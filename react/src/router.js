@@ -9,7 +9,7 @@ import Layout from "./modules/layout/module"
 const Router = (props) => {
     return (
         <BrowserRouter>
-            <Layout state={props}/>
+            <Layout {...props}/>
         </BrowserRouter>
     )
 }
