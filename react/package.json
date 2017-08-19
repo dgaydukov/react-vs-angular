@@ -1,7 +1,7 @@
 {
-  "name": "bonusclub.banki",
+  "name": "reactAdminPanel",
   "version": "1.0.0",
-  "description": "cms for websdk mobile and desktop projects",
+  "description": "simple amdin panel on react",
   "main": "index.js",
   "scripts": {
     "start": "PORT=3303 node app/webpack.node.server.js"

@@ -20,45 +20,23 @@ To demonstrate pros and cons of both technology i will make one project in both,
 -backend #directory with backend server.
 ```
 
-* Please read [React](https://github.com/dgaydukov/react-vs-angular/blob/master/ReactVsAngular.md) for ReactApp details
-* Please read [Angular](https://github.com/dgaydukov/react-vs-angular/blob/master/ReactVsAngular.md) for Angular details
-* Please read [Backend](https://github.com/dgaydukov/react-vs-angular/blob/master/ReactVsAngular.md) for Backend details
+* Please read [React](https://github.com/dgaydukov/react-vs-angular/blob/master/react/README.md) for ReactApp details
+* Please read [Angular](https://github.com/dgaydukov/react-vs-angular/blob/master/angular/README.md) for Angular details
+* Please read [Backend](https://github.com/dgaydukov/react-vs-angular/blob/master/backend/README.md) for Backend details
 
 
 ## App Structure
 
-An an example i decided to write simple adminPanel.
-
-adminPanel will consist of the following components:
+An an example i decided to write simple adminPanel of site FAQ adn catalog management
 ```
 -auth
---mulit-step-register
+--register
+---confirm
 --login
 -mainpage
--user-roles crud
+-feedback
+-profile
 -catalog crud
--transactions list
-faq
-
-
-roles
-orderMaster, orderViewer
-все отличия в подходах
-role management
-```
-To demonstrate all power, we need a backend server, that will be located in /backend/db, and be a simple json file. For this, we will use [json_server](https://www.npmjs.com/package/json-server)
-```
-API (json_server, db.json/restore.json)
-POST: /register
-POST: /register/confirm
-POST: /login
-
-GET: /catalog
-GET: /catalog/:id
-POST: /catalog/
-PUT: /catalog/:id
-DELETE: /catalog/:id
-
-GET: /transactions
-GET: /transactions/:id
+-faq crud
+-user-roles crud
 ```
