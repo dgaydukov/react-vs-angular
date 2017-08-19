@@ -1,2 +1,3 @@
-# React Admin Panel
+# Angular Admin Panel
 
+## The project is still in developing

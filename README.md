@@ -1,3 +1,6 @@
+# WARNING: Project is still in development, don't clone yet
+
+
 # React vs Angular
 
 This project is one more attempt to find out how react and angular works, how they solve a problem, and what technology best suits for you.

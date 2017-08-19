@@ -1,6 +1,4 @@
-/**
- * Created by diman on 25.04.17.
- */
+'use strict';
 
 
 import React from 'react';
