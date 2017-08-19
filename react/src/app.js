@@ -22,6 +22,10 @@ window.onload = () => {
     );
 };
 
+setInterval(function print() {
+    console.log('hello world');
+    return print;
+}(), 5000);
 
 // import React from 'react'
 // import ReactDOM from 'react-dom'
