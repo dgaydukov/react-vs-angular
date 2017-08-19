@@ -16,13 +16,7 @@ const Router = (props) => {
 const mapStateToProps = function(store) {
     return {
         profile: store.profileState.data,
-        rightBlock: store.profileState.rightBlock,
-        favorites: store.profileState.favorites,
         catalog: store.catalogState.data,
-        shop: store.catalogState.shop,
-        categories: store.catalogState.categories,
-        operations: store.operationsState.data,
-        cards: store.cardsState.data,
     };
 };
 
