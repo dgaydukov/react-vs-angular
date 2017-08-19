@@ -1,28 +1,8 @@
+'use strict';
+
 
 import React from 'react'
-import { Switch, Route, Link, Redirect } from 'react-router-dom';
 
-import _ from 'underscore';
-import * as helpers from "../../helpers";
-
-
-import store from '../../redux/store';
-import * as creators from "../../redux/action-creators"
-
-import CatalogList from './views/view';
-import CatalogShop from './views/partner';
-
-
-const SORT_TYPE = {
-    POPULAR: "popular",
-    NAME: "az",
-    LATEST: "latest",
-    BONUS: "bonus",
-    FAVORITES: "favorites",
-    CATEGORIES: "categories"
-}
-
-const CASHBACK_PERCENT = "%";
 
 class Catalog extends React.Component{
     constructor(props){

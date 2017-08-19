@@ -1,3 +1,5 @@
+'use strict';
+
 
 import React from 'react';
 import { Switch, Route, Link, Redirect, withRouter } from 'react-router-dom';
@@ -68,8 +70,6 @@ class Layout extends React.Component{
                 <div className="container">
                     <main className="main clearfix">
                         <div className="main-with-bar clearfix">
-                            <h1 className="page-title">Бонусный клуб</h1>
-                            <div className="blc__desc">Сравнить условия получения и подобрать потребительский кредит, лучшие ставки по кредитам в банках. Выберите параметры поиска онлайн</div>
                             <Content state={state}/>
                         </div>
                     </main>
