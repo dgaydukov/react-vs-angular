@@ -6,12 +6,13 @@ That's why i decided to write this article
 ## App example
 
 To demonstrate pros and cons of both technology i will make one project in both, and we will see, how technologies solve these issues
+* Building process
+* Caching problems (clear browser cache after every release)
 * Event binding
 * React propTypes vs TypeScript typed variables
+* React Virtual DOM vs Angular Regular DOM
+* React JSX vs Angular templates
 * Redux global state vs Angular state
-* Redux Virtual DOM vs Angular Regular DOM
-* Redux Jsx vs Angular templates
-* and much more...
 
 ## Project Structure
 ```
@@ -27,16 +28,7 @@ To demonstrate pros and cons of both technology i will make one project in both,
 
 ## App Structure
 
-An an example i decided to write simple adminPanel of site FAQ adn catalog management
-```
--auth
---register
----confirm
---login
--mainpage
--feedback
--profile
--products crud
--faq crud
--user-roles crud
-```
+An an example i decided to write simple adminPanel
+
+* Please read [Application Description](https://github.com/dgaydukov/react-vs-angular/blob/master/AppDescription.md) for more details
+

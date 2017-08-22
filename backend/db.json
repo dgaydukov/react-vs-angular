@@ -1,9 +1,71 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "users":[
+    {
+      "id": 1,
+      "fullName": "Admin",
+      "email": "john@mail.ru",
+      "password": "12345"
+    },
+    {
+      "id": 1,
+      "fullName": "John Doe",
+      "email": "john@mail.ru",
+      "password": "12345"
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "roles":[
+    {
+      "name": "admin",
+      "access": "users,roles,faq,products,feedback"
+    },
+    {
+      "name": "faqMaster",
+      "access": "faq"
+    },
+    {
+      "name": "companyAdmin",
+      "access": "products,feedback"
+    },
+    {
+      "name": "productManager",
+      "access": "products"
+    }
   ],
-  "profile": { "name": "typicode" }
+  "companies":[
+    {
+      "id": 1,
+      "name": "PR-agency"
+    }
+  ],
+  "faq":[
+    {
+      "question": "How to use this site",
+      "answer": "Very simple"
+    },
+    {
+      "question": "What the purpose of this site",
+      "answer": "To sell goods"
+    },
+    {
+      "question": "How much delivery costs",
+      "answer": "Depends on many factos"
+    }
+  ],
+  "products":[
+    {
+      "id": 1,
+      "name": "TV",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "Fridge",
+      "price": 200
+    },
+    {
+      "id": 3,
+      "name": "PC",
+      "price": 300
+    }
+  ]
 }

@@ -29,7 +29,6 @@ export function logout() {
 export function getProfile() {
     return axios.get('2')
         .then(response => {
-            console.log(response.data)
             store.dispatch(creators.getProfileSuccess(response.data));
             return response;
         }).catch(error=>{
@@ -39,9 +38,8 @@ export function getProfile() {
 }
 
 export function getCatalog() {
-    return axios.get(url)
+    return axios.get('3')
         .then(response => {
-            console.log("getCatalog", response);
             store.dispatch(creators.getCatalogSuccess(response.data));
             return response;
         })
