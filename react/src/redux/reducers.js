@@ -1,16 +1,14 @@
 'use strict';
 
+/**
+ *  Redux reducers combiner
+ */
 
 import { combineReducers } from 'redux';
-
-// Reducers
-import profileReducer from './reducers/profile-reducer';
+import userReducer from './reducers/user-reducer';
 import catalogReducer from './reducers/catalog-reducer';
 
-// Combine Reducers
-var reducers = combineReducers({
-    profileState: profileReducer,
+export default combineReducers({
+    userState: userReducer,
     catalogState: catalogReducer,
 });
-
-export default reducers;

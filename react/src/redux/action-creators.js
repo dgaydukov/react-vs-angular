@@ -1,11 +1,15 @@
 'use strict';
 
+/**
+ * List of thunks to store redux logic or make async actions
+ */
+
 import * as types from "./action-types";
 
 
-export function getProfileSuccess(data) {
+export function getUserSuccess(data) {
     return{
-        type: types.GET_PROFILE_SUCCESS,
+        type: types.GET_USER_SUCCESS,
         data
     }
 }

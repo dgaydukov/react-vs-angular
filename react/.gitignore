@@ -1,8 +1,7 @@
 .idea
 node_modules
-static
-build/js/bundle.js
+build/js/react
 build/css/bundle.css
-build/img
+css/bundle.css
 npm-debug.log
 package-lock.json

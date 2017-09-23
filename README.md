@@ -1,6 +1,3 @@
-# WARNING: Project is still in development, don't clone yet
-
-
 # React vs Angular
 
 This project is one more attempt to find out how react and angular works, how they solve a problem, and what technology best suits for you.
@@ -22,7 +19,7 @@ As I'm a linux user, this project is best works with linux, but it can work in w
 
 ## Project Structure
 
-Please read [ReactVsAngular](https://github.com/dgaydukov/react-vs-angular/blob/master/ReactVsAngular.md) for project details
+Please read [react-vs-angular](https://github.com/dgaydukov/react-vs-angular/blob/master/ReactVsAngular.md) for project details
 
 
 ## Built With

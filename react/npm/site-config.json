@@ -1,5 +1,5 @@
 {
-    "baseURL": "http://127.0.0.1:3304/",
-    "cookieAuthTokenName": "accessToken",
-    "cookieUserIdName": "userId"
+    "baseURL": "https://payqr.ru/websdk/api/",
+    "cookieUserId": "userId",
+    "cookieAuthToken": "accessToken"
 }
