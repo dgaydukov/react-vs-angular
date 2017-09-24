@@ -2,12 +2,14 @@
   "users":[
     {
       "id": 1,
+      "companyId": 1,
       "fullName": "Admin",
       "email": "john@mail.ru",
       "password": "12345"
     },
     {
       "id": 1,
+      "companyId": 2,
       "fullName": "John Doe",
       "email": "john@mail.ru",
       "password": "12345"
@@ -34,6 +36,10 @@
   "companies":[
     {
       "id": 1,
+      "name": "Main Company"
+    },
+    {
+      "id": 2,
       "name": "PR-agency"
     }
   ],

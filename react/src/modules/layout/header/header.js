@@ -16,9 +16,12 @@ export default class Header extends PureComponent{
         return(
             <header>
                 <ul className={s.list}>
-                    <li><Link to="/">{`main(${this.props.user.id?"logged":"anonymous"})`}</Link></li>
-                    <li><Link to="/main">main</Link></li>
-                    <li><Link to="/profile">profile</Link></li>
+                    <li><Link to="/">{`dashboard(${this.props.user.id?"logged":"anonymous"})`}</Link></li>
+                    <li><Link to="/auth/register">register</Link></li>
+                    <li><Link to="/auth/login">login</Link></li>
+                    <li><Link to="/companies">companies</Link></li>
+                    <li><Link to="/users/list">users</Link></li>
+                    <li><Link to="/users/roles">roles</Link></li>
                 </ul>
             </header>
         )

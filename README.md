@@ -8,7 +8,7 @@ In order to start, you should clone this repo. After cloning you will get one pr
 
 ### Prerequisites
 
-As I'm a linux user, this project is best works with linux, but it can work in windows evniroment too.
+As I'm a linux user, this project is best works with linux, but it can work in windows environment too.
 
 
 ### Installing
@@ -19,13 +19,15 @@ As I'm a linux user, this project is best works with linux, but it can work in w
 
 ## Project Structure
 
-Please read [react-vs-angular](https://github.com/dgaydukov/react-vs-angular/blob/master/ReactVsAngular.md) for project details
+Please read [description](https://github.com/dgaydukov/react-vs-angular/blob/master/description.md) for project details
 
 
 ## Built With
 
-* [Angular 4.0](https://angular.io) - The web framework
-* [React 15.0](https://facebook.github.io/react/blog/2016/04/07/react-v15.html) - The web framework
+* [Angular QuickStart](https://angular.io/guide/quickstart) - Angular 4.0 Foundation for building projects
+* [React QuickStart](https://github.com/dgaydukov/react-quickstart) - My own React Foundation for building projects
+* [Json Server](https://www.npmjs.com/package/json-server) - Backend Json API
+* [Admin Template](https://github.com/puikinsh/gentelella) - Free to use Admin Template (css & bootstrap)
 
 
 ## Authors
