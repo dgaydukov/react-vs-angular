@@ -27,7 +27,7 @@ Please read [description](https://github.com/dgaydukov/react-vs-angular/blob/mas
 * [Angular QuickStart](https://angular.io/guide/quickstart) - Angular 4.0 Foundation for building projects
 * [React QuickStart](https://github.com/dgaydukov/react-quickstart) - My own React Foundation for building projects
 * [Json Server](https://www.npmjs.com/package/json-server) - Backend Json API
-* [Admin Template](https://github.com/puikinsh/gentelella) - Free to use Admin Template (css & bootstrap)
+* [Admin Template](https://github.com/almasaeed2010/AdminLTE) - Free to use Admin Template (css & bootstrap)
 
 
 ## Authors

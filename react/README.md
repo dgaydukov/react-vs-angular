@@ -24,85 +24,23 @@ src #react source code
 
 ### Installing
 
-* Clone repository ```git clone https://github.com/dgaydukov/react-quickstart.git```
-* Go to react ```cd react-quickstart```
+* Go to react ```cd react```
 * Install ```npm i```
 * Run and enjoy ```npm start```
 
-### How to work
 
-This project is very versatile. First of all you have 2 web servers
-* Node.js server that use webpack compiler to watch file changes, and [SSE](https://www.npmjs.com/package/server-sent-events) for page reloading
-* Webpack server, use [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) for recompile and [HMR](https://webpack.github.io/docs/hot-module-replacement-with-webpack.html) for page reload
-You should choose which scenario fits best for you
+### Detailed Readme
+
+Check out [detailed](https://github.com/dgaydukov/react-quickstart/blob/master/README.md) readme
 
 
+## React App Development Notes
 
-### Built With
-
-* [React v.15.0](https://facebook.github.io/react/blog/2016/04/07/react-v15.html) + [Redux v.4.0](https://github.com/reactjs/redux) through [React Redux](https://github.com/reactjs/react-redux)
-* [React Router v.4.0](https://github.com/ReactTraining/react-router) - Routing system
-* [Redux Thunk v.2.0](https://github.com/gaearon/redux-thunk) - middleware for redux (thunk concept)
-* [Redux selectors](https://github.com/reactjs/reselect) - middleware for redux (reselect concept)
-* [Babel](https://github.com/babel/babel) - ES6 to ES5 converter
-* [Webpack v.2.0](https://github.com/webpack/webpack) - Building tool
-* [ESLint](https://github.com/eslint/eslint) - Linting tool
-
-## Where to store Redux Logic
-
-* Action creators [action-creators.js](https://github.com/dgaydukov/react-quickstart/blob/master/src/redux/action-creators.js)
-* Api functions [webapi.js](https://github.com/dgaydukov/react-quickstart/blob/master/src/api/webapi.js)
-* Redux thunk [action-thunks.js](https://github.com/dgaydukov/react-quickstart/blob/master/src/redux/action-thunks.js)
-* Redux selectors [catalog-reducer.js](https://github.com/dgaydukov/react-quickstart/blob/master/src/redux/reducers/catalog-reducer.js)
-
-
-## Code Splitting
-
-There are 2 concepts on code splitting
-* Split code in app.js & vendor.js
-* Split code based on url
-
-The first is pretty straightforward. You just move out all libraries into different file (for example vendor.js) and thus you get 2 files instead of one.
-Webpack allow it by simply put 2 entry points. You can checkout it by looking at [webpack.base.config.js](https://github.com/dgaydukov/react-quickstart/blob/master/npm/webpack.base.config.js).
-The second approach is a bit tricky. Fortunately webpack also provide us with this ability out of the box.
-The point is that webpack whenever it sees ```System.import```, it starts to load code into chunk. And when we go to the url, webpack request this chunk.
-You can check out [async-component](https://github.com/dgaydukov/react-quickstart/blob/master/src/async-component.js).
-In order to use Async version, just comment layout import and use AsyncLayout instead
-
-
-### How React Handle code-splitting
-
-The magic is here
-```javascript
-/******/ 		var head = document.getElementsByTagName('head')[0];
-/******/ 		var script = document.createElement('script');
-/******/ 		script.type = 'text/javascript';
-/******/ 		script.charset = 'utf-8';
-/******/ 		script.async = true;
-/******/ 		script.timeout = 120000;
-/******/
-/******/ 		if (__webpack_require__.nc) {
-/******/ 			script.setAttribute("nonce", __webpack_require__.nc);
-/******/ 		}
-/******/ 		script.src = __webpack_require__.p + "js/react/" + chunkId + "." + {"2":"4b578c06079938850b7b","3":"742508d606b5509c8e18","4":"20c8fe7c0346fe23c0a8"}[chunkId] + ".js";
-/******/ 		var timeout = setTimeout(onScriptComplete, 120000);
-/******/ 		script.onerror = script.onload = onScriptComplete;
-/******/ 		function onScriptComplete() {
-/******/ 			// avoid mem leaks in IE.
-/******/ 			script.onerror = script.onload = null;
-/******/ 			clearTimeout(timeout);
-/******/ 			var chunk = installedChunks[chunkId];
-/******/ 			if(chunk !== 0) {
-/******/ 				if(chunk) {
-/******/ 					chunk[1](new Error('Loading chunk ' + chunkId + ' failed.'));
-/******/ 				}
-/******/ 				installedChunks[chunkId] = undefined;
-/******/ 			}
-/******/ 		};
-```
-As we see react watch for router change, then if file not loaded upload it
-
-
-## Authors
-
-* **Gaydukov Dmitiry** - *Take a look* - [How to become a Senior Javascript Developer](https://github.com/dgaydukov/how-to-become-a-senior-js-developer)
+##### Bind App to already created bootstrap Admin Template
+##### Building process
+##### Caching problems (clear browser cache after every release)
+##### Event binding
+##### React propTypes vs TypeScript typed variables
+##### React Virtual DOM vs Angular Regular DOM
+##### React JSX vs Angular templates
+##### Redux global state vs Angular state

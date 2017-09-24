@@ -13,6 +13,7 @@
   "author": "Gaydukov Dmitriy",
   "license": "ISC",
   "dependencies": {
+    "admin-lte": "^2.4.0",
     "axios": "^0.16.1",
     "body-parser": "^1.17.1",
     "cross-env": "^5.0.5",

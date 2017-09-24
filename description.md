@@ -8,9 +8,9 @@ That's why i decided to write this article.
 
 ## Project Structure
 ```
--angular #direcotry with angular project
--react #directory with react project
--backend #directory with backend server.
+angular #direcotry with angular project
+react #directory with react project
+backend #directory with backend server.
 ```
 
 * Please read [React](https://github.com/dgaydukov/react-vs-angular/blob/master/react/README.md) for React details
@@ -27,23 +27,24 @@ Based on this we have following application structure
 
 ```
 auth
--register
---register yourself
---select your company(create new if doesn't exists)
--login
--FAQ CRUD
--Products CRUD
--companies R (readonly)
--users CRUD
---confirm of new users and companies
--roles CRUD
--feedback(for companies to talk with you)
+    register
+    register yourself
+    select your company(create new if doesn't exists)
+login
+FAQ CRUD
+Products CRUD
+companies R (readonly)
+users CRUD
+    confirm of new users and companies
+roles CRUD
+feedback(for companies to talk with you)
 ```
 
 ## Comparing Points
 
 To demonstrate pros and cons of both technology i will make one project in both, and we will see, how technologies solve following issues
 
+* Bind App to already created bootstrap Admin Template
 * Building process
 * Caching problems (clear browser cache after every release)
 * Event binding
